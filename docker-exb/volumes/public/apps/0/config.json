@@ -2637,13 +2637,7 @@
   },
   "messageConfigs": {},
   "attributes": {
-    "portalUrl": "https://baltimore.maps.arcgis.com",
-    "isWebTier": false,
-    "clientId": "",
-    "title": "OEM Dashboard v3",
-    "description": "",
-    "type": "Web Experience",
-    "thumbnail": null
+    "portalUrl": "https://baltimore.maps.arcgis.com"
   },
   "sharedThemeVariables": {
     "header": {

@@ -1,1 +1,14 @@
-{}
+{
+  "Sidebar": {
+    "svg": "https://localhost:3001/experience/../widgets/layout/sidebar/icon.svg?token=n9ly7h_AXy3kCdeR2zlL4fmIqzMf-YCpq1zbmCDNpxufZg4oL2-NVgKqenricRWykdc8vPfSV0e69CYMWTW_9OiOdkfSctfpyo4cQdmA7-SImDvB53zLak9gzVoHVqlQv243O2vFzMQh5EKQd19rv2G610ldtXXplPkalYgQ0L4mlobxAiaHHN34sTFfr-DVHWQR-yoLiHGQmBYw1M1fbQwqjekqIdQfAgU3ytsgJcuNH9dI0WVkINR_-8JzCNB3?token=n9ly7h_AXy3kCdeR2zlL4fmIqzMf-YCpq1zbmCDNpxufZg4oL2-NVgKqenricRWykdc8vPfSV0e69CYMWTW_9OiOdkfSctfpyo4cQdmA7-SImDvB53zLak9gzVoHVqlQv243O2vFzMQh5EKQd19rv2G610ldtXXplPkalYgQ0L4mlobxAiaHHN34sTFfr-DVHWQR-yoLiHGQmBYw1M1fbQwqjekqIdQfAgU3ytsgJcuNH9dI0WVkINR_-8JzCNB3",
+    "properties": {
+      "filename": "Sidebar"
+    }
+  },
+  "Text": {
+    "svg": "https://localhost:3001/experience/../widgets/common/text/icon.svg?token=n9ly7h_AXy3kCdeR2zlL4fmIqzMf-YCpq1zbmCDNpxufZg4oL2-NVgKqenricRWykdc8vPfSV0e69CYMWTW_9OiOdkfSctfpyo4cQdmA7-SImDvB53zLak9gzVoHVqlQv243O2vFzMQh5EKQd19rv2G610ldtXXplPkalYgQ0L4mlobxAiaHHN34sTFfr-DVHWQR-yoLiHGQmBYw1M1fbQwqjekqIdQfAgU3ytsgJcuNH9dI0WVkINR_-8JzCNB3?token=n9ly7h_AXy3kCdeR2zlL4fmIqzMf-YCpq1zbmCDNpxufZg4oL2-NVgKqenricRWykdc8vPfSV0e69CYMWTW_9OiOdkfSctfpyo4cQdmA7-SImDvB53zLak9gzVoHVqlQv243O2vFzMQh5EKQd19rv2G610ldtXXplPkalYgQ0L4mlobxAiaHHN34sTFfr-DVHWQR-yoLiHGQmBYw1M1fbQwqjekqIdQfAgU3ytsgJcuNH9dI0WVkINR_-8JzCNB3",
+    "properties": {
+      "filename": "Text"
+    }
+  }
+}

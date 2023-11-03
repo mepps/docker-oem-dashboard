@@ -1,0 +1,816 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_1"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_1": {
+      "type": "FIXED",
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      },
+      "order": [
+        "1"
+      ]
+    },
+    "layout_2": {
+      "type": "FIXED",
+      "label": "First",
+      "content": {
+        "2": {
+          "type": "WIDGET",
+          "setting": {
+            "style": {},
+            "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": true
+            }
+          },
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.1%",
+            "width": "100.0%",
+            "height": "99.9%"
+          },
+          "widgetId": "widget_3"
+        }
+      },
+      "order": [
+        "2"
+      ]
+    },
+    "layout_3": {
+      "type": "FIXED",
+      "label": "Second",
+      "order": [
+        "0",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "setting": {
+            "style": {},
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "-0.0%",
+            "bottom": "94.3%",
+            "width": "100.0%",
+            "height": "5.7%"
+          },
+          "widgetId": "widget_5",
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "11.6%",
+            "right": "12.0%",
+            "top": "5.8%",
+            "bottom": "37.1%",
+            "width": "76.4%",
+            "height": "57.1%"
+          },
+          "widgetId": "widget_6",
+          "setting": {
+            "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": true
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    }
+  },
+  "exbVersion": "1.12.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_2": {
+      "uri": "widgets/layout/sidebar/",
+      "version": "1.12.0",
+      "label": "Sidebar",
+      "config": {
+        "direction": "HORIZONTAL",
+        "collapseSide": "SECOND",
+        "overlay": false,
+        "size": "197px",
+        "divider": {
+          "visible": true,
+          "lineStyle": {
+            "type": "solid",
+            "color": "var(--light-500)",
+            "width": "1px"
+          }
+        },
+        "resizable": true,
+        "toggleBtn": {
+          "visible": true,
+          "iconSource": 0,
+          "icon": "RIGHT",
+          "offsetX": -15,
+          "offsetY": 0,
+          "position": "CENTER",
+          "iconSize": 14,
+          "width": 15,
+          "height": 60,
+          "border": {
+            "type": "solid",
+            "color": "var(--light-500)",
+            "width": "1px"
+          },
+          "color": {
+            "normal": {
+              "icon": {
+                "useTheme": false,
+                "color": "var(--black)"
+              },
+              "bg": {
+                "useTheme": true,
+                "color": "var(--light)"
+              }
+            },
+            "hover": {
+              "bg": {
+                "useTheme": true,
+                "color": "var(--light)"
+              }
+            }
+          },
+          "expandStyle": {
+            "style": {
+              "borderRadius": "92px 0 0 92px"
+            }
+          },
+          "collapseStyle": {
+            "style": {
+              "borderRadius": "92px 0 0 92px"
+            }
+          }
+        },
+        "defaultState": 1
+      },
+      "id": "widget_2",
+      "layouts": {
+        "FIRST": {
+          "LARGE": "layout_2"
+        },
+        "SECOND": {
+          "LARGE": "layout_3"
+        }
+      }
+    },
+    "widget_3": {
+      "uri": "widgets/common/table/",
+      "version": "1.12.0",
+      "label": "Table",
+      "config": {
+        "layersConfig": [
+          {
+            "id": "dataSource_3-0-9",
+            "name": "Layers",
+            "useDataSource": {
+              "dataSourceId": "dataSource_3-0",
+              "mainDataSourceId": "dataSource_3-0",
+              "rootDataSourceId": "dataSource_3",
+              "fields": [
+                "OBJECTID",
+                "TITLE",
+                "SCOPE",
+                "SOURCE",
+                "DESCRIPTION",
+                "CATEGORYID",
+                "RENDERER",
+                "URL",
+                "FILTER"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "TITLE",
+                "name": "TITLE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Title",
+                "format": null
+              },
+              {
+                "jimuName": "SCOPE",
+                "name": "SCOPE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Scope",
+                "format": null
+              },
+              {
+                "jimuName": "SOURCE",
+                "name": "SOURCE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Source",
+                "format": null
+              },
+              {
+                "jimuName": "DESCRIPTION",
+                "name": "DESCRIPTION",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Description",
+                "format": null
+              },
+              {
+                "jimuName": "CATEGORYID",
+                "name": "CATEGORYID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "Category ID",
+                "format": null
+              },
+              {
+                "jimuName": "RENDERER",
+                "name": "RENDERER",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Renderer",
+                "format": null
+              },
+              {
+                "jimuName": "URL",
+                "name": "URL",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "URL",
+                "format": null
+              },
+              {
+                "jimuName": "FILTER",
+                "name": "FILTER",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Filter",
+                "format": null
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              },
+              {
+                "jimuName": "SCOPE",
+                "name": "SCOPE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Scope",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "TITLE",
+                "name": "TITLE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Title",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "URL",
+                "name": "URL",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "URL",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "SOURCE",
+                "name": "SOURCE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Source",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "DESCRIPTION",
+                "name": "DESCRIPTION",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Description",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "CATEGORYID",
+                "name": "CATEGORYID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "Category ID",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "RENDERER",
+                "name": "RENDERER",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Renderer",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "FILTER",
+                "name": "FILTER",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Filter",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              }
+            ],
+            "enableAttachements": false,
+            "enableEdit": true,
+            "allowCsv": false,
+            "enableSearch": true,
+            "searchFields": "DESCRIPTION,TITLE",
+            "enableRefresh": true,
+            "enableSelect": true,
+            "selectMode": "SINGLE",
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            }
+          },
+          {
+            "id": "dataSource_3-1-6",
+            "name": "Templates",
+            "useDataSource": {
+              "dataSourceId": "dataSource_3-1",
+              "mainDataSourceId": "dataSource_3-1",
+              "rootDataSourceId": "dataSource_3",
+              "fields": [
+                "OBJECTID",
+                "TITLE"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "TITLE",
+                "name": "TITLE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Title",
+                "format": null
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              },
+              {
+                "jimuName": "TITLE",
+                "name": "TITLE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Title",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              }
+            ],
+            "enableAttachements": false,
+            "enableEdit": true,
+            "allowCsv": false,
+            "enableSearch": true,
+            "searchFields": "TITLE",
+            "enableRefresh": true,
+            "enableSelect": true,
+            "selectMode": "SINGLE",
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            }
+          },
+          {
+            "id": "dataSource_3-2-7",
+            "name": "Categories",
+            "useDataSource": {
+              "dataSourceId": "dataSource_3-2",
+              "mainDataSourceId": "dataSource_3-2",
+              "rootDataSourceId": "dataSource_3",
+              "fields": [
+                "OBJECTID",
+                "TITLE"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "TITLE",
+                "name": "TITLE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Title",
+                "format": null
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              },
+              {
+                "jimuName": "TITLE",
+                "name": "TITLE",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "Title",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              }
+            ],
+            "enableAttachements": false,
+            "enableEdit": true,
+            "allowCsv": false,
+            "enableSearch": true,
+            "searchFields": "TITLE",
+            "enableRefresh": true,
+            "enableSelect": true,
+            "selectMode": "SINGLE",
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            }
+          },
+          {
+            "id": "dataSource_3-3-8",
+            "name": "Layer Template Relationships",
+            "useDataSource": {
+              "dataSourceId": "dataSource_3-3",
+              "mainDataSourceId": "dataSource_3-3",
+              "rootDataSourceId": "dataSource_3",
+              "fields": [
+                "OBJECTID",
+                "TEMPLATEID",
+                "LAYERID"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                }
+              },
+              {
+                "jimuName": "TEMPLATEID",
+                "name": "TEMPLATEID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "Tempate ID",
+                "format": null
+              },
+              {
+                "jimuName": "LAYERID",
+                "name": "LAYERID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "Layer ID",
+                "format": null
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "OBJECTID",
+                "name": "OBJECTID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "editAuthority": false,
+                "editable": false,
+                "visible": true
+              },
+              {
+                "jimuName": "TEMPLATEID",
+                "name": "TEMPLATEID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "Tempate ID",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "LAYERID",
+                "name": "LAYERID",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "Layer ID",
+                "format": null,
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              }
+            ],
+            "enableAttachements": false,
+            "enableEdit": true,
+            "allowCsv": false,
+            "enableSearch": false,
+            "searchFields": "",
+            "enableRefresh": true,
+            "enableSelect": true,
+            "selectMode": "SINGLE",
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            }
+          }
+        ],
+        "arrangeType": "TABS"
+      },
+      "id": "widget_3",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3-1",
+          "mainDataSourceId": "dataSource_3-1",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "OBJECTID",
+            "TITLE"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_3-2",
+          "mainDataSourceId": "dataSource_3-2",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "OBJECTID",
+            "TITLE"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_3-3",
+          "mainDataSourceId": "dataSource_3-3",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "OBJECTID",
+            "TEMPLATEID",
+            "LAYERID"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_3-0",
+          "mainDataSourceId": "dataSource_3-0",
+          "rootDataSourceId": "dataSource_3",
+          "fields": [
+            "OBJECTID",
+            "TITLE",
+            "SCOPE",
+            "SOURCE",
+            "DESCRIPTION",
+            "CATEGORYID",
+            "RENDERER",
+            "URL",
+            "FILTER"
+          ]
+        }
+      ]
+    },
+    "widget_5": {
+      "uri": "widgets/common/text/",
+      "version": "1.12.0",
+      "label": "Text",
+      "config": {
+        "text": "<p style=\"text-align: center;\"><span style=\"font-size: 24px;\">Actions</span></p>",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true
+        }
+      },
+      "id": "widget_5"
+    },
+    "widget_6": {
+      "uri": "widgets/oem-database-config/",
+      "version": "1.11.0",
+      "label": "OEM Database Config",
+      "config": {
+        "templateTableUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/1",
+        "layerTableUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/0",
+        "categoryTableUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/2",
+        "templateLayerRelationshipsUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/3"
+      },
+      "id": "widget_6"
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "FEATURE_SERVICE",
+      "sourceLabel": "OEM Database Test",
+      "url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_Test/FeatureServer",
+      "itemId": "c03f6eb129df474f924ee684da733204",
+      "portalUrl": "https://baltimore.maps.arcgis.com"
+    },
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "FEATURE_SERVICE",
+      "sourceLabel": "OEM_Database_v2",
+      "url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer",
+      "itemId": "a167ac873cd74eb9ad2e989caec011cb",
+      "portalUrl": "https://baltimore.maps.arcgis.com"
+    },
+    "dataSource_3": {
+      "id": "dataSource_3",
+      "type": "FEATURE_SERVICE",
+      "sourceLabel": "OEM Database v2",
+      "url": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer",
+      "itemId": "92dc71eaff8b46e49b2d4aff0e24ef60",
+      "portalUrl": "https://baltimore.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://baltimore.maps.arcgis.com",
+    "isWebTier": false,
+    "clientId": "3pRp9BFJJxX3XDIq",
+    "title": "OEM GIS Center Database Config",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": null
+  },
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#5c5c5c",
+      "color": "#ffffff"
+    },
+    "body": {},
+    "button": {},
+    "logo": {}
+  },
+  "originExbVersion": "1.12.0",
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "timestamp": 1692340996774
+}

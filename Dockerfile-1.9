@@ -1,0 +1,13 @@
+FROM node:lts
+
+# Copy and unzip configuration files
+Workdir /home/node
+COPY setup setup/
+RUN unzip setup/ArcGISExperienceBuilder.zip
+
+# Install Dependencies
+WORKDIR /home/node/ArcGISExperienceBuilder/client
+RUN npm ci
+
+WORKDIR /home/node/ArcGISExperienceBuilder/server
+RUN npm ci

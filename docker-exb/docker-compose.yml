@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  exb:
+    image: meppsbmore/esri-exb:exb-1.9
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    volumes:
+      - ./volumes/widgets:/home/node/ArcGISExperienceBuilder/client/your-extensions/widgets/
+      - ./volumes/themes:/home/node/ArcGISExperienceBuilder/client/your-extensions/themes/
+      - ./volumes/public:/home/node/ArcGISExperienceBuilder/server/public/
+      - ./volumes/types:/home/node/ArcGISExperienceBuilder/client/types
+    command: >
+      bash -c "cd ../server &&
+      npm --prefix ../client start & npm start"

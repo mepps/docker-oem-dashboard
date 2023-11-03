@@ -1,0 +1,7 @@
+{
+    "templateTableUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/1",
+    "layerTableUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/0",
+    "categoryTableUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/2",
+    "templateLayerRelationshipsUrl": "https://services1.arcgis.com/UWYHeuuJISiGmgXx/arcgis/rest/services/OEM_Database_v2/FeatureServer/3"
+
+}

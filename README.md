@@ -14,3 +14,4 @@ docker build -f Dockerfile-1.9 -t esri-exb:exb-1.9 .
 cd docker-exb
 docker-compose up
 ```
+3. Navigate to https://localhost:3001 and enter your url and clientId.
